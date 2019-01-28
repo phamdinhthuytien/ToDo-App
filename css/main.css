@@ -1,0 +1,187 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding-left: 6px;
+  background: #fff;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  border: 0.5px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+ul li:last-child {
+	border-bottom: 1px solid #DDDDDD;
+}
+
+ul li:first-child {
+	border-top: 1px solid #DDDDDD;
+}
+
+#check {
+	background: #ddd;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li p {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+ul li span {
+	width: 30px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 4px;
+	margin: 50px 5px 10px 5px;
+	
+}
+
+ul li i {
+	margin-left: 50%;
+	transform: translate(-25%);
+	width: 30px;
+	vertical-align: middle;
+	margin-top: -3px;
+	font-size: 15px;
+	
+}
+
+.close {
+	background-color: #ff0000;
+	color: #fff;	
+}
+
+.close:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.checked {
+	background-color: #0066FF;
+	color: #fff;
+}
+
+.checked:hover {
+	background-color: #333333;
+  color: white;
+}
+
+.edit {
+	background-color: #fff;
+	border: 1px solid grey;
+}
+
+.edit:hover {
+	background-color: #333333;
+  color: white;
+}
+
+.redo {
+	background-color: #0066FF;
+	color: #fff;
+}
+
+.redo:hover {
+	background-color: #333333;
+  color: white;
+}
+
+.header {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	padding-left: 40px;
+	padding-bottom: 30px;
+}
+
+.header h2 {
+	line-height: 1.5;
+}
+
+.header h2:hover {
+  color: grey;
+} 
+.input {
+	display: block;
+	position: relative;
+}
+
+#myInput{
+	margin-left: 40px;
+	padding-left: 20px;
+	width:calc(75% - 40px);
+	height: 40px;
+	line-height: 50px;
+	font-size: 14px;
+}
+
+.addBtn {
+	display: inline-block;
+	float: right;
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	border: 1px solid grey;
+	text-align: center;
+	cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+  border: none;
+}
+
+#myUl {
+	margin-left: 40px;
+	position: relative;
+}
+
+.line {
+	display: block;
+	height: 1px;
+	background-color: #DDDDDD;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
