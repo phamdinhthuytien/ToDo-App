@@ -1,5 +1,32 @@
 
 
+// Thêm công việc mới khi click vào button "thêm"
+      
+$(document).ready(
+    function(){
+        $('#button').click(
+            function(){
+                var toAdd = $('input[name=ListItem]').val();
+                $('ul').append('<li>' + '<p>'+ toAdd + '</p>' + '<span class="edit">' + '<i class="fas fa-pen" >' + '</i>' + '</span>' + '<span class="checked">'+ '<i class="fas fa-check">' + '</i>' + '</span>' + '<span class="close">'+ '<i class="fas fa-times">' + '</i>' + '</span>' + '</li>');
+            });       
+
+       $("input[name=ListItem]").keyup(function(event){
+          if(event.keyCode == 13){
+            $("#button").click();
+          }         
+      });
+      
+     
+      $('input').focus(function() {
+        $(this).val('');
+      });
+      
+      $('ul').sortable();  
+      
+    }
+);
+
+
 // Khi button xóa được click thì ẩn phần tử li chứa nó
   var close = document.getElementsByClassName("close");
   var i;
@@ -9,55 +36,6 @@
       div.style.display = "none";
     }
   }
-
-// Thêm công việc mới khi click vào button "thêm"
-      function newElement() {
-        // tạo node li
-        var li = document.createElement("li");
-
-        //tạo p mới
-        var p = document.createElement("p")
-
-        // lấy giá trị người dùng nhập
-        var inputValue = document.getElementById("myInput").value;
-
-        // tạo đối tượng text node
-        var t = document.createTextNode(inputValue);
-
-        // gán text node cho thẻ p vừa tạo
-        p.appendChild(t);
-
-        //thêm vào trong thẻ li
-        document.getElementsByClassName("todo").appendChild(p);
-        // kiểm tra nếu text node rỗng thì cảnh báo, nếu không thì thêm vào trong thẻ li
-        if (inputValue === '') {
-          alert("You must write something!");
-        } else {
-          document.getElementById("myUl").appendChild(li);
-        }
-        // xóa giá trị thẻ input
-        document.getElementById("myInput").value = "";
-        // thêm button xóa vào thẻ li mới tạo
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        li.appendChild(span);
-        // gán lại sự kiện cho các button xóa
-        for (i = 0; i < close.length; i++) {
-          close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-          }
-        }
-      }
-
- 
-
-
-
-
-
 
 
 

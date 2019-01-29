@@ -28,33 +28,33 @@
 		</header>
 
 		<section class="input">
-			<input id="myInput" type="text" placeholder="Add new...">
-			<span id="button" class="addBtn"><i class="fas fa-plus"></i></i> Add Task</span>
+			<input id="myInput" name="ListItem" type="text" placeholder="Add new...">
+			<span id="button"><i class="fas fa-plus"></i></i> Add Task</span>
 		</section>
 
 		<div class="line"></div>
 
 		<section class="list">
 			<ul id="myUl">
-				<li id="check" class="todo">
+				<li id="check">
 					<p>Work</p>
-					<span class="edit"><i class="fas fa-pen"></i></span>
+					<span class="edit"><i id="iconedit" class="fas fa-pen"></i></span>
 					<span class="redo"><i class="fas fa-redo-alt"></i></span>
 					<span class="close"><i class="fas fa-times"></i></span>
 				</li>
-				<li class="todo">
+				<li>
 					<p>Eat</p>
 					<span class="edit"><i class="fas fa-pen"></i></span>
 					<span class="checked"><i class="fas fa-check"></i></span>
 					<span class="close"><i class="fas fa-times"></i></span>
 				</li>
-				<li class="todo">
+				<li>
 					<p>Sleep</p>
 					<span class="edit"><i class="fas fa-pen"></i></span>
 					<span class="checked"><i class="fas fa-check"></i></span>
 					<span class="close"><i class="fas fa-times"></i></span>
 				</li>
-				<li class="todo">
+				<li>
 					<p>Play</p>
 					<span class="edit"><i class="fas fa-pen"></i></span>
 					<span class="checked"><i class="fas fa-check"></i></span>
@@ -64,6 +64,7 @@
 		</section>
 	</div>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/function.js"></script>
 
 </body>

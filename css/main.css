@@ -137,7 +137,7 @@ ul li i {
 	font-size: 14px;
 }
 
-.addBtn {
+#button {
 	display: inline-block;
 	float: right;
 	width: 25%;
@@ -152,7 +152,7 @@ ul li i {
   transition: 0.3s;
 }
 
-.addBtn:hover {
+#button:hover {
   background-color: #bbb;
   border: none;
 }
