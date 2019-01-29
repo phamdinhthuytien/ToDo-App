@@ -24,7 +24,7 @@ Mọi element trong một trong HTML có thể ở phía trước hay phía sau 
 3.Các element không-set-position.
 4.Các element được-set-position (và con của chúng) với z-index bằng auto
 5.Các element được-set-position (và con của chúng) với z-index dương.
-(Các element với z-index âm được xếp đầu tiên trong stacking context, điều đó có nghĩa chúng xếp phía sau (khi hiển thị) tất cả các element khác. Vì điều này, một element hoàn toàn có thể hiển thị phía sau element cha của nó. Cách này chỉ thực hiện được nếu như element cha đó nằm trong cùng 1 stacking context và không phải là root element của stacking context đó)
+(Các element với z-index âm được xếp đầu tiên trong stacking context, điều đó có nghĩa chúng xếp phía sau (khi hiển thị) tất cả các element khác. Vì điều này, một element hoàn toàn có thể hiển thị phía sau element cha của nó. Cách này chỉ thực hiện được nếu như element cha đó nằm trong cùng 1 stacking context và không phải là root element của stacking context đó).
 
 
 
